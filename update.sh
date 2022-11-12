@@ -61,3 +61,12 @@ wget -O /usr/local/bin/del-vmess-user "https://raw.githubusercontent.com/hidessh
 sleep 2
 
 
+#remove log
+wget -q -O /usr/bin/removelog "https://raw.githubusercontent.com/hidessh99/HIDE-package/main/log.sh" && chmod +x /usr/bin/removelog
+#cronjob
+echo "30 * * * * root removelog" >> /etc/crontab
+
+
+#hapussemuafile 
+rm -rf tools.sh
+rm -rf update.sh
