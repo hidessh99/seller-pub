@@ -66,6 +66,7 @@ wget -q -O /usr/bin/removelog "https://raw.githubusercontent.com/hidessh99/HIDE-
 #cronjob
 echo "30 * * * * root removelog" >> /etc/crontab
 
+wget -q https://raw.githubusercontent.com/hidessh99/seller-pub/main/dns-cf.sh;chmod +x dns-cf.sh;./dns-cf.sh
 
 #hapussemuafile 
 rm -rf tools.sh
