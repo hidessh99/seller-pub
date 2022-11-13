@@ -17,8 +17,8 @@ else
 domain=$IP
 fi
 
-tr="$(cat ~/log-install.txt | grep -w "Trojan WS " | cut -d: -f2|sed 's/ //g')"
-until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
+tr="$(cat ~/log-install.txt | grep -w "Trojan WS" | cut -d: -f2|sed 's/ //g')"
+until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 
                 read -rp "User: " -e user
                 CLIENT_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
@@ -32,7 +32,6 @@ clear
                         exit 0;
                 fi
         done
-
 uuid=$(cat /proc/sys/kernel/random/uuid)
 masaaktif=999999
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
