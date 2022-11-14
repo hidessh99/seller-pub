@@ -92,5 +92,6 @@ echo $SUB_DOMAIN > /etc/xray/domain
 echo $SUB_DOMAIN > /etc/v2ray/domain
 echo $SUB_DOMAIN > /root/domain
 echo $SUB_DOMAIN > /var/lib/scrz-prem/ipvps.conf
+echo $SUB_DOMAIN > /var/lib/SIJA/ipvps.conf
 
 rm -rf dns-cf.sh
