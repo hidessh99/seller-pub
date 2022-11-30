@@ -21,7 +21,7 @@ apt install jq curl -y
 ###DOM#AIN=installer.my.id
 DOMAIN=ipsvr.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
-SUB_DOMAIN=${sub}.hidessh.my.id
+SUB_DOMAIN=${sub}.ipsvr.me
 CF_ID=sonialrahman64@gmail.com
 CF_KEY=39b7e0a538c0b1dd21b89029772dc8d442c8c
 
